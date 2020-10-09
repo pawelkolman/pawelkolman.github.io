@@ -1194,6 +1194,7 @@ span.badge {
     border-radius: 0;
     font-weight: 400;
     border: 1px solid #fff;
+    margin-bottom: .4em;
 }
 
 a img {
