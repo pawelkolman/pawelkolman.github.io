@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Najlepsza wypożyczalnia samochodów w Opolu według opinii klientów. Limuzyny, samochody dostawcze, samochody osobowe, busy.">
+    <meta name="author" content="Paweł Kolman">
+    <title>CIERNIAK - wypożyczalnia samochodów Opole</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>    
+    <link rel="shortcut icon" href="PKassets/favicon.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/portfolio/folio03.jpg",
+	        "images/portfolio/folio04.jpg",
+	        "images/portfolio/folio13.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{ 	
+              	latitude:40.7566,
+				longitude: -73.9863,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: { 
+              	image: "images/marker.png", 
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:40.7566,
+         	longitude: -73.9863,
+          	zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="index.html"><h1><img style='height: 35px; margin-top: -15px' src='PKassets/logo-horizontal.svg'/></h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#oferta">Oferta</a></li>
+                    <li><a href="#onas">O nas</a></li>
+                    <li><a href="#stajnia">Nasza stajnia</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li> 
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portale <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id='home'>
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                	<img src='PKassets/c-white.svg' style='height: 100px; margin-top: 100px' class="bounce-in"/><br/>
+                                    <h2 class="boxed animation animated-item-1 fade-down" style='font-size: 20px'>WYPOŻYCZALNIA SAMOCHODÓW OSOBOWYCH</h2><br/>
+                                    <p class="boxed animation animated-item-2 fade-up">ekskluzywnie, komfortowo, bezpiecznie</p>
+                                    <br>
+                                    <a class="btn btn-md animation bounce-in" href="#oferta">Więcej informacji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="oferta" class="white">
+            <div class="container">
+            <div class="gap"></div> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Nasza oferta</h2>
+                            <hr>
+                            <p>Najbardziej kompleksowe usługi świadczone na terenie Opola według opinii klientów</p>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-truck fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Transport</h3>
+                                <p>Z dowolnego miejsca o każdej porze</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Zadowoleni klienci</h3>
+                                <p>Od 2011 regularnie powiększamy grono zadowolonych klientów.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-plane fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Ekspresowo</h3>
+                                <p>Do celu dojedziesz szybko i bezpiecznie</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-star fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Usługi dodatkowe</h3>
+                                <p>Limuzyna może być idealnym narzędziem do prowadzenia kampanii marketingowej Państwa firmy.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-home fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Spod domu</h3>
+                                <p>do dowolnego miejsca dowiezie Cię szarmancki szofer w nienagannym stroju.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-clock-o fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Ekspresowa realizacja</h3>
+                                <p>atrakcyjne ceny i pełna dyskrecja</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+            </div>
+            <div class="gap"></div>
+        </section>
+
+
+		<section id="single-quote" class="divider-section"> 	            	        
+	            <div class="container">
+	            	<div class="gap"></div> 
+	                <div class="row">                        
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <div class="carousel-inner">
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/logoSQUAREorginal.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Firmy, które rosną dzięki rozwojowi i ulepszeniom, nie zginą.</p>
+	                                                <small>Henry Ford</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>	                                
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+  		</section>
+
+        <section id="onas" class="white">
+        	<div class="container">
+	            <div class="gap"></div>
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="center gap fade-down section-heading">
+	                        <h2 class="main-title">O nas</h2>
+	                    </div>                
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1 fade-up">
+                    <p>Na rynku motoryzacyjnym pojawiliśmy się w 2011 i od tamtej pory regularnie powiększamy grono zadowolonych klientów. W naszej ofercie znajdziecie Państwo zarówno możliwość wynajmu ekskluzywnych limuzyn, jak i samochodów codziennego  użytku.</p>
+
+                    <p>Naszą misją jest świadczenie usług o najwyższych standardach, dlatego każdy samochód charakteryzuje się perfekcyjnym stanem, a za sterem limuzyny zasiada szarmancki szofer w nienagannym wieczorowym stroju. Dokładamy wszelkich starań, aby Państwa podróż przebiegła bezpiecznie, komfortowo i punktualnie. Gwarantujemy również pełną dyskrecję i atrakcyjne ceny. Możemy zapewnić, że decydując się na wynajem naszych samochodów, dokonujecie Państwo trafnego wyboru.</p>
+                    <p>Zapraszamy do zapoznania się z naszych ofertą.</p>
+
+                  </div>
+	                <div class="col-md-4 fade-up">
+
+	                </div>
+	            </div>
+               <div class="gap"></div>
+                
+
+	            <div class="gap"></div>
+	            
+	            <div class="gap"></div>
+
+	            
+	            <div class="gap"></div>  
+	            <div class="gap"></div>   
+            </div>      
+        </section>
+
+        <section id="stats" class="divider-section">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="fa fa-clock-o bounce-in"></span></span>
+                            <h1><span class="counter">246000</span></h1>
+                            <h3>GODZIN ZA KÓŁKIEM</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="fa fa-truck bounce-in"></span></span>
+                            <h1><span class="counter">5</span></h1>
+                            <h3>SAMOCHODÓW W GARAŻU</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="fa fa-flag-o bounce-in"></span></span>
+                            <h1><span class="counter">283746574</span></h1>
+                            <h3>KILOMETRÓW NA LICZNIKU</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="fa fa-users bounce-in"></span></span>
+                            <h1><span class="counter">130</span></h1>
+                            <h3>ZADOWOLONYCH KLIENTÓW</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div> 
+        </section>
+
+        <section id="stajnia" class="white">
+       		<div class="container">
+	        	<div class="gap"></div> 
+		        	<div class="center gap fade-down section-heading">
+		                <h2 class="main-title">Nasza stajnia</h2>
+		                <hr>
+		                <p>Ciągle powiększająca się rodzina samochodów gotowych do wynajęcia</p>
+		            </div> 
+<ul class="portfolio-filter fade-down center">
+                        <li><a class="btn btn-outlined btn-primary active" href="#" style='margin-bottom: 5px' data-filter="*">Wszystkie</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" style='margin-bottom: 5px' data-filter=".c1">BMW 740l</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" style='margin-bottom: 5px' data-filter=".c2">Opel Vivaro</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" style='margin-bottom: 5px' data-filter=".c3">Passat B8</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" style='margin-bottom: 5px' data-filter=".c4">BMW 335i Cabrio</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" style='margin-bottom: 5px' data-filter=".c5">BMW 520</a></li>
+                    </ul><!--/#portfolio-filter-->
+
+                    <ul class="portfolio-items col-3 isotope fade-up">
+                        <li class="portfolio-item c1 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio01.jpg" alt="">
+                                <h5>BMW 740l</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c1 isotope-item">
+                          <div class="item-inner">
+                            <img src="images/portfolio/folio03.jpg" alt="">
+                            <h5>BMW 740l</h5>
+                            <div class="overlay">
+                              <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>        
+                            </div>           
+                          </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c1 isotope-item">
+                          <div class="item-inner">
+                            <img src="images/portfolio/folio05.jpg" alt="">
+                            <h5>BMW 740l</h5>
+                            <div class="overlay">
+                              <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+                            </div>    
+                          </div>       
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c2 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio02.jpg" alt="">
+                                <h5>Opel Vivaro</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>              
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c2 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio04.jpg" alt="">
+                                <h5>Opel Vivaro</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c2 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio06.jpg" alt="">
+                                <h5>Opel Vivaro</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c3 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio07.jpg" alt="">
+                                <h5>Passat B8</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c3 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio08.jpg" alt="">
+                                <h5>Passat B8</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c3 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio09.jpg" alt="">
+                                <h5>Passat B8</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c4 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio10.jpg" alt="">
+                                <h5>BMW 335i Cabrio</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c4 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio11.jpg" alt="">
+                                <h5>BMW 335i Cabrio</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c4 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio12.jpg" alt="">
+                                <h5>BMW 335i Cabrio</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c5 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio13.jpg" alt="">
+                                <h5>BMW 520</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c5 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio14.jpg" alt="">
+                                <h5>BMW 520</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item c5 isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio15.jpg" alt="">
+                                <h5>BMW 520</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                      </ul>
+                </div>
+            </section>   
+            
+            <section id="testimonial-carousel" class="divider-section">
+            <div class="gap"></div>
+	            <div class="container">
+	                <div class="row">
+                    	<div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Opinie naszych klientów</h2>
+                            <hr>
+                            <div class="gap"></div>
+                        </div>                         
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <!-- Bottom Carousel Indicators -->
+	                            <ol class="carousel-indicators">
+	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+	                            </ol>                                
+	                            <!-- Carousel Slides / Quotes -->
+	                            <div class="carousel-inner">                                
+	                              <!-- Quote 1 -->
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/logoSQUARE.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Konkretnie i sprawnie. Tak jak ustalone, tak wdrożone. Polecam!</p>
+	                                                <small>Andrea Rzany-Skierska</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                <!-- Quote 2 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/logoSQUARE.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Solidna firma z którą się przyjemnie współpracuje.</p>
+	                                                <small>Agata Kwas</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                <!-- Quote 3 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/logoSQUARE.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Polecam, obsługa klienta na najwyższym poziomie.</p>
+	                                                <small>Marcin Piechota</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+      		</section>  
+
+            <section id="kontakt" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Kontakt</h2>
+                        <hr>
+                        <p>Skorzystaj z naszych usług i odkryj magiczną stronę podróży</p>
+                    </div>    
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Dane firmy</h3>
+                            <p><span class="icon icon-home"></span>AutoCierniak Grzegorz Cierniak<br/>
+                                <span class="icon icon-phone"></span>Budowlanych 48, Opole<br/>
+                                <span class="icon icon-mobile"></span>NIP: 991-00-59-816<br/>
+                                <span class="icon icon-mobile"></span>REGON: 160020174<br/><br/>
+                                <span class="icon icon-envelop"></span> <a href="mailto:kontakt@autocierniak.pl">kontakt@autocierniak.pl</a><br/>
+                                <span class="icon icon-envelop"></span> <a href="tel:+48788787490">tel:+48 788 787 490</a><br/>
+                            </p>
+                        </div><!-- col -->
+                    
+                        <div class="col-md-8 fade-up">
+                            <h3>Wyślij nam wiadomość</h3>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendmail.php" id="contactform">
+                                <input name="name" id="name" placeholder="Imię i nazwisko" />
+                                <input name="mail" id="email" placeholder="Email" />
+                                <textarea name="content" id="comments" placeholder="Treść wiadomości"></textarea>
+                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Wyślij" />
+                            </form>
+                        </div><!-- col -->
+                    </div><!-- row -->  
+                    <div class="gap"></div>         
+                </div>
+            </section>
+        </div>
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; AutoCierniak Grzegorz Cierniak - Wszystkie prawa zastrzeżone.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
