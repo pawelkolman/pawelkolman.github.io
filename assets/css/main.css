@@ -11,7 +11,7 @@
   --  04. Content Area
   --  05. Content Area --> Intro
   --  06. Content Area --> About
-  --  07. Content Area --> Service
+  --  07. Content Area --> Skill
   --  08. Content Area --> Work
   --  09. Content Area --> Contact
   --  10. Content Area --> Footer
@@ -261,9 +261,10 @@ button
          -o-transition: opacity 1s ease;
             transition: opacity 1s ease;
 
-    background: url(../img/background.jpg);
+    background: url(../img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -530,10 +531,10 @@ a.animated-hover:hover .square span:last-child
 }
 
 
-/** 7. Content Area --> Service
+/** 7. Content Area --> Skill
 *******************************************************************/
 
-#service .services-list
+#skill .skills-list
 {
     margin-bottom: 0;
     padding: 0;
@@ -541,12 +542,7 @@ a.animated-hover:hover .square span:last-child
     list-style: none;
 }
 
-#service .services-list li
-{
-    display: block;
-}
-
-#service .services-list li button
+#skill .skills-list li button
 {
     font-size: 2.4rem;
     font-size: 2rem;
@@ -568,7 +564,7 @@ a.animated-hover:hover .square span:last-child
     border-radius: 0;
 }
 
-#service .services-list li button:after
+#skill .skills-list li button:after
 {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 1.7rem;
@@ -585,7 +581,7 @@ a.animated-hover:hover .square span:last-child
     color: #fff;
 }
 
-#service .services-list li .well
+#skill .skills-list li .well
 {
     min-height: 20px;
     margin-bottom: 0;
@@ -1205,6 +1201,6 @@ a:hover img {
   opacity: 0.6;
 }
 
-#service .item {
+#skill .item {
   height: 0;
 }
